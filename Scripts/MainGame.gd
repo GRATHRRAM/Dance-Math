@@ -11,6 +11,7 @@ enum Mode {
 	SUBTRACTION,
 	MULTIPLICATION,
 	DIVISION,
+	POWERS,
 	SQUAREROOT
 }
 
@@ -99,11 +100,18 @@ func generate_task(mode : Mode) -> Dictionary:
 			question = "%d / %d" % [dividend, divisor]
 			correct_answer = answer
 
-		4: # Square root (perfect square)
+		4: # Powers (exponents)
+			var base = randi_range(0, max_gen_number)
+			var exponent = randi_range(0, 3)
+			question = "%d ^ %d" % [base, exponent]
+			correct_answer = pow(base, exponent)
+
+		5: # Square root (perfect square)
 			var answer = randi_range(0, max_gen_number)
 			var square = answer * answer
 			question = "√%d" % square
 			correct_answer = answer
+
 
 	# -----------------------------
 	# Generate safe unique answers

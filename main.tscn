@@ -2,9 +2,14 @@
 
 [ext_resource type="Script" uid="uid://dbxxa46vdp4c8" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://cf7pdjc4kgipb" path="res://Textures/arrow.png" id="2_0xm2m"]
+[ext_resource type="Theme" uid="uid://c7ykq0km8js1r" path="res://new_theme.tres" id="3_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://bcwynxxrddso7" path="res://Textures/background2.png" id="4_1bvp3"]
+[ext_resource type="LabelSettings" uid="uid://dtqw1yxil72s0" path="res://labl.tres" id="4_lquwl"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7dm0k"]
 font_size = 64
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
 
 [node name="Main" type="Node2D" unique_id=287213498]
 script = ExtResource("1_ig7tw")
@@ -14,6 +19,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 1280.0
 offset_bottom = 720.0
+theme = ExtResource("3_1bvp3")
 
 [node name="Label" type="Label" parent="Gui" unique_id=324356513]
 layout_mode = 0
@@ -44,19 +50,19 @@ texture = ExtResource("2_0xm2m")
 [node name="Label2" type="Label" parent="Gui" unique_id=1563914356]
 layout_mode = 0
 offset_top = 512.0
-offset_right = 196.0
+offset_right = 200.0
 offset_bottom = 680.0
-text = "Stań żeby sprawdzić lewą
-Mate"
+text = "Stań żeby sprawdzić lewą Mate"
+label_settings = ExtResource("4_lquwl")
 
 [node name="Label3" type="Label" parent="Gui" unique_id=1033973500]
 layout_mode = 0
-offset_left = 1072.0
+offset_left = 1024.0
 offset_top = 512.0
-offset_right = 1280.0
+offset_right = 1276.0
 offset_bottom = 680.0
-text = "Stań żeby sprawdzić prawą
-Mate"
+text = "Stań żeby sprawdzić prawą Mate"
+label_settings = ExtResource("4_lquwl")
 
 [node name="NumRrange" type="HSlider" parent="Gui" unique_id=2044760022]
 layout_mode = 0
@@ -74,6 +80,7 @@ offset_top = 368.0
 offset_right = 1280.0
 offset_bottom = 436.0
 text = "Zasięg liczb od 0 do 10"
+label_settings = ExtResource("4_lquwl")
 horizontal_alignment = 1
 
 [node name="TimeInfo" type="Label" parent="Gui" unique_id=1015977156]
@@ -82,6 +89,7 @@ offset_top = 640.0
 offset_right = 1280.0
 offset_bottom = 708.0
 text = "Czas na odpowiedz to 7 sekund"
+label_settings = ExtResource("4_lquwl")
 horizontal_alignment = 1
 
 [node name="Modes" type="OptionButton" parent="Gui" unique_id=614097717]
@@ -90,8 +98,9 @@ offset_left = 480.0
 offset_top = 464.0
 offset_right = 800.0
 offset_bottom = 525.0
+theme = ExtResource("3_1bvp3")
 selected = 0
-item_count = 5
+item_count = 6
 popup/item_0/text = "Dodawanie"
 popup/item_0/id = 0
 popup/item_1/text = "Odejmowanie"
@@ -100,8 +109,10 @@ popup/item_2/text = "Mnożenie"
 popup/item_2/id = 2
 popup/item_3/text = "Dzielenie"
 popup/item_3/id = 3
-popup/item_4/text = "Pierwiastkowanie"
-popup/item_4/id = 4
+popup/item_4/text = "Potęgi"
+popup/item_4/id = 5
+popup/item_5/text = "Pierwiastkowanie"
+popup/item_5/id = 4
 
 [node name="TimeRange" type="HSlider" parent="Gui" unique_id=711516422]
 layout_mode = 0
@@ -113,6 +124,13 @@ min_value = 1.0
 max_value = 60.0
 value = 7.0
 allow_greater = true
+
+[node name="Background2" type="Sprite2D" parent="." unique_id=950471095]
+modulate = Color(0.5996037, 0.5996037, 0.5996037, 1)
+show_behind_parent = true
+position = Vector2(643.55554, 358)
+scale = Vector2(0.67037034, 0.67037034)
+texture = ExtResource("4_1bvp3")
 
 [connection signal="pressed" from="Gui/tabl" to="." method="_on_tabl_pressed"]
 [connection signal="value_changed" from="Gui/NumRrange" to="." method="_on_num_rrange_value_changed"]
