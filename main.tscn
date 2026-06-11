@@ -3,12 +3,14 @@
 [ext_resource type="Script" uid="uid://dbxxa46vdp4c8" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://cf7pdjc4kgipb" path="res://Textures/arrow.png" id="2_0xm2m"]
 [ext_resource type="Theme" uid="uid://c7ykq0km8js1r" path="res://new_theme.tres" id="3_1bvp3"]
+[ext_resource type="FontFile" uid="uid://dm1ryf5s0jnc5" path="res://Fonts/KOMIKAX_.ttf" id="3_7mycd"]
 [ext_resource type="Texture2D" uid="uid://bcwynxxrddso7" path="res://Textures/background2.png" id="4_1bvp3"]
 [ext_resource type="LabelSettings" uid="uid://dtqw1yxil72s0" path="res://labl.tres" id="4_lquwl"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7dm0k"]
+font = ExtResource("3_7mycd")
 font_size = 64
-outline_size = 10
+outline_size = 30
 outline_color = Color(0, 0, 0, 1)
 
 [node name="Main" type="Node2D" unique_id=287213498]
@@ -34,7 +36,7 @@ layout_mode = 0
 offset_left = 520.0
 offset_top = 160.0
 offset_right = 764.0
-offset_bottom = 232.0
+offset_bottom = 240.0
 text = "Rozpocznij"
 
 [node name="Lewa" type="Sprite2D" parent="Gui" unique_id=121639149]
@@ -94,10 +96,10 @@ horizontal_alignment = 1
 
 [node name="Modes" type="OptionButton" parent="Gui" unique_id=614097717]
 layout_mode = 0
-offset_left = 480.0
+offset_left = 496.0
 offset_top = 464.0
-offset_right = 800.0
-offset_bottom = 525.0
+offset_right = 816.0
+offset_bottom = 552.0
 theme = ExtResource("3_1bvp3")
 selected = 0
 item_count = 6
