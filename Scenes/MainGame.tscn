@@ -150,7 +150,7 @@ texture = ExtResource("3_rukrh")
 
 [node name="Arrow3" type="Sprite2D" parent="Gui/Player1" unique_id=1277223075]
 modulate = Color(0.16470589, 0.6313726, 1, 1)
-position = Vector2(320.00003, 656)
+position = Vector2(320.00003, 640)
 rotation = -1.5707964
 scale = Vector2(0.33888888, 0.33888888)
 texture = ExtResource("3_rukrh")

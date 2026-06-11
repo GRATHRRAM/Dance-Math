@@ -25,3 +25,14 @@ func _process(delta: float) -> void:
 
 func _on_tabl_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/MainGame.tscn")
+
+func _on_num_rrange_value_changed(value: float) -> void:
+	$Gui/NumRangeInfo.text = "Zasięg Liczb od 0 do %d" % int(value)
+	Global.max_gen_num = value
+
+func _on_modes_item_selected(index: int) -> void:
+	Global.mode = index
+
+func _on_time_range_value_changed(value: float) -> void:
+	$Gui/TimeInfo.text = "Czas na odpowiedz to %d sekund" % int(value)
+	Global.reset_time = value

@@ -14,9 +14,9 @@ enum Mode {
 	SQUAREROOT
 }
 
-var max_gen_number = 3
+var max_gen_number = Global	.max_gen_num
 
-var reset_time = 6.0
+var reset_time = Global.reset_time
 var times = [reset_time, reset_time]
 
 var points = [0, 0]
@@ -36,7 +36,7 @@ var TimeScene: PackedScene = preload("res://Scenes/time.tscn")
 # Two Buttons At the Same time
 var t1 := -1.0
 var t2 := -1.0
-var window := 1
+var window := 0.5
 
 
 func _ready() -> void:
@@ -132,7 +132,7 @@ func generate_task(mode : Mode) -> Dictionary:
 func make_task(player: int) -> void:
 	times[player] = reset_time
 
-	var task = generate_task(Mode.MULTIPLICATION)
+	var task = generate_task(Global.mode)
 
 	solutions[player] = task.solution
 
