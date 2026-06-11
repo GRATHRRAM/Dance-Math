@@ -39,7 +39,7 @@ outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_ybmw1"]
 font = ExtResource("3_321ql")
-font_size = 64
+font_size = 62
 font_color = Color(0.2784314, 1, 1, 1)
 outline_size = 20
 outline_color = Color(0, 0, 0, 1)
@@ -134,20 +134,20 @@ text = "99"
 label_settings = SubResource("LabelSettings_7280s")
 horizontal_alignment = 1
 
-[node name="Arrow" type="Sprite2D" parent="Gui/Player1" unique_id=351822134]
+[node name="ArrowRight" type="Sprite2D" parent="Gui/Player1" unique_id=351822134]
 modulate = Color(0.8156863, 0, 0.8156863, 1)
 position = Vector2(576.00006, 640)
 scale = Vector2(0.33888888, 0.33888888)
 texture = ExtResource("3_rukrh")
 
-[node name="Arrow2" type="Sprite2D" parent="Gui/Player1" unique_id=182850879]
+[node name="ArrowLeft" type="Sprite2D" parent="Gui/Player1" unique_id=182850879]
 modulate = Color(0.8156863, 0, 0.8156863, 1)
 position = Vector2(64, 656.00006)
 rotation = 3.1415925
 scale = Vector2(0.33888888, 0.33888888)
 texture = ExtResource("3_rukrh")
 
-[node name="Arrow3" type="Sprite2D" parent="Gui/Player1" unique_id=1277223075]
+[node name="ArrowUp" type="Sprite2D" parent="Gui/Player1" unique_id=1277223075]
 modulate = Color(0.16470589, 0.6313726, 1, 1)
 position = Vector2(320.00003, 640)
 rotation = -1.5707964
@@ -217,20 +217,20 @@ text = "99"
 label_settings = SubResource("LabelSettings_7280s")
 horizontal_alignment = 1
 
-[node name="Arrow4" type="Sprite2D" parent="Gui/Player2" unique_id=1879781127]
+[node name="ArrowRight" type="Sprite2D" parent="Gui/Player2" unique_id=1879781127]
 modulate = Color(0.8146272, 0.00052616536, 0.816102, 1)
 position = Vector2(576, 640)
 scale = Vector2(0.33888888, 0.33888888)
 texture = ExtResource("3_rukrh")
 
-[node name="Arrow5" type="Sprite2D" parent="Gui/Player2" unique_id=1684477245]
+[node name="ArrowLeft" type="Sprite2D" parent="Gui/Player2" unique_id=1684477245]
 modulate = Color(0.8156863, 0, 0.8156863, 1)
 position = Vector2(64, 648)
 rotation = 3.1415925
 scale = Vector2(0.33888888, 0.33888888)
 texture = ExtResource("3_rukrh")
 
-[node name="Arrow6" type="Sprite2D" parent="Gui/Player2" unique_id=1326372207]
+[node name="ArrowUp" type="Sprite2D" parent="Gui/Player2" unique_id=1326372207]
 modulate = Color(0.16470589, 0.6313726, 1, 1)
 position = Vector2(296, 640)
 rotation = -1.5707964
@@ -273,7 +273,7 @@ vertical_alignment = 1
 layout_mode = 0
 offset_right = 1280.0
 offset_bottom = 712.0
-text = "Stań na dwóch tylnich strzałkach aby zacząć"
+text = "Stań na dwóch tylnych strzałkach, aby rozpocząć grę."
 label_settings = SubResource("LabelSettings_ybmw1")
 horizontal_alignment = 1
 vertical_alignment = 1

@@ -13,7 +13,8 @@ config_version=5
 config/name="Dance"
 run/main_scene="uid://dmu01eqh5uxhk"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+boot_splash/image="uid://bcwynxxrddso7"
+config/icon="uid://cy4hgfghfysfd"
 
 [autoload]
 
@@ -23,6 +24,7 @@ Global="*uid://kuh1q0xbyw38"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/size/mode=3
 window/stretch/mode="canvas_items"
 
 [input]

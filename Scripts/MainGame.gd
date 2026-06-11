@@ -30,6 +30,7 @@ var half_screen := 0.0
 var CorrectScene: PackedScene = preload("res://Scenes/Correct.tscn")
 var WrongScene: PackedScene = preload("res://Scenes/Wrong.tscn")
 var TimeScene: PackedScene = preload("res://Scenes/time.tscn")
+var WrongSprite: PackedScene = preload("res://Scenes/WrongSprite.tscn")
 
 @onready var players = [
 	$Gui/Player1,
@@ -164,7 +165,7 @@ func answer(player: int, choice: int) -> void:
 		spawn_particle("Correct", random_player_x(player))
 	else:
 		if points[player] > -5: points[player] -= 1
-		spawn_particle("Wrong", random_player_x(player))
+		spawn_sprite(player, choice)
 
 	update_points(player)
 	make_task(player)
@@ -264,6 +265,22 @@ func handle_reset() -> void:
 # --------------------------------------------------
 # PARTICLES
 # --------------------------------------------------
+
+func spawn_sprite(player, option):
+	var obj = WrongSprite.instantiate()
+	var x = 0
+	
+	if player == 0:
+		if option == Direction.LEFT: x = $Gui/Player1/ArrowLeft.position.x
+		if option == Direction.UP: x = $Gui/Player1/ArrowUp.position.x
+		if option == Direction.RIGHT: x = $Gui/Player1/ArrowRight.position.x
+	if player == 1:
+		if option == Direction.LEFT: x = $Gui/Player2/ArrowLeft.position.x + 640
+		if option == Direction.UP: x = $Gui/Player2/ArrowUp.position.x + 640
+		if option == Direction.RIGHT: x = $Gui/Player2/ArrowRight.position.x + 640
+	obj.position = Vector2(x, 520)
+	obj.scale = Vector2(0.5,0.5)
+	add_child(obj)
 
 func spawn_particle(type: String, x: float) -> void:
 	var obj
