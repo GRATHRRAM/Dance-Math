@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcxj2ddcyqkxq"
-path="res://.godot/imported/background.jpg-bd3570d8e6a0739ddb9bdc7cc999ab9a.ctex"
+uid="uid://c0yw8jynkg7vl"
+path="res://.godot/imported/GreenMark.png-20709c351362abe9cf7bebfddfc7cbd3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Gry/tabl/background.jpg"
-dest_files=["res://.godot/imported/background.jpg-bd3570d8e6a0739ddb9bdc7cc999ab9a.ctex"]
+source_file="res://Textures/GreenMark.png"
+dest_files=["res://.godot/imported/GreenMark.png-20709c351362abe9cf7bebfddfc7cbd3.ctex"]
 
 [params]
 

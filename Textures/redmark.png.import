@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1yxld28hynsy"
-path="res://.godot/imported/redmark.png-c89fd748dcb025f330417afaa9360971.ctex"
+path="res://.godot/imported/redmark.png-a5c136067e994085c8445858aa3aa96f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Gry/tabl/redmark.png"
-dest_files=["res://.godot/imported/redmark.png-c89fd748dcb025f330417afaa9360971.ctex"]
+source_file="res://Textures/redmark.png"
+dest_files=["res://.godot/imported/redmark.png-a5c136067e994085c8445858aa3aa96f.ctex"]
 
 [params]
 

@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://bjsurcui38ydm"]
 
-[ext_resource type="Script" uid="uid://d0tk8mj011aaa" path="res://Gry/tabl/Particle.gd" id="1_sx8qv"]
-[ext_resource type="Texture2D" uid="uid://b1yxld28hynsy" path="res://Gry/tabl/redmark.png" id="2_g5kdj"]
+[ext_resource type="Script" uid="uid://d0tk8mj011aaa" path="res://Scripts/Particle.gd" id="1_sx8qv"]
+[ext_resource type="Texture2D" uid="uid://b1yxld28hynsy" path="res://Textures/redmark.png" id="2_g5kdj"]
+
 
 [node name="Wrong" type="Node2D" unique_id=1955916640]
 script = ExtResource("1_sx8qv")

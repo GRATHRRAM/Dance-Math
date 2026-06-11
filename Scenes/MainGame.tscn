@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://dwxlexmif0tge"]
 
-[ext_resource type="Script" uid="uid://ywygu8nvrpin" path="res://Gry/tabl/tabl.gd" id="1_lemcj"]
-[ext_resource type="FontFile" uid="uid://dm1ryf5s0jnc5" path="res://Gry/tabl/KOMIKAX_.ttf" id="2_ndwas"]
-[ext_resource type="Texture2D" uid="uid://bcxj2ddcyqkxq" path="res://Gry/tabl/background.jpg" id="2_v0m7q"]
-[ext_resource type="Texture2D" uid="uid://cf7pdjc4kgipb" path="res://Gry/tabl/arrow.png" id="3_rukrh"]
+[ext_resource type="Script" uid="uid://ywygu8nvrpin" path="res://Scripts/tabl.gd" id="1_lemcj"]
+[ext_resource type="FontFile" uid="uid://dm1ryf5s0jnc5" path="res://Fonts/KOMIKAX_.ttf" id="2_ndwas"]
+[ext_resource type="Texture2D" uid="uid://bcxj2ddcyqkxq" path="res://Textures/background.jpg" id="2_v0m7q"]
+[ext_resource type="Texture2D" uid="uid://cf7pdjc4kgipb" path="res://Textures/arrow.png" id="3_rukrh"]
+
 
 [sub_resource type="LabelSettings" id="LabelSettings_r326q"]
 font = ExtResource("2_ndwas")

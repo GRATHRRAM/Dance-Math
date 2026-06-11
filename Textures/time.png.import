@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0yw8jynkg7vl"
-path="res://.godot/imported/GreenMark.png-bc006b5812f7050cb6d3e869ebcfc9e2.ctex"
+uid="uid://ch3ui8yaxul7c"
+path="res://.godot/imported/time.png-f62abfc4546325a97f4fe85d8a822055.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Gry/tabl/GreenMark.png"
-dest_files=["res://.godot/imported/GreenMark.png-bc006b5812f7050cb6d3e869ebcfc9e2.ctex"]
+source_file="res://Textures/time.png"
+dest_files=["res://.godot/imported/time.png-f62abfc4546325a97f4fe85d8a822055.ctex"]
 
 [params]
 

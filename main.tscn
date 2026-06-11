@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dmu01eqh5uxhk"]
 
 [ext_resource type="Script" uid="uid://dbxxa46vdp4c8" path="res://main.gd" id="1_ig7tw"]
-[ext_resource type="Texture2D" uid="uid://cf7pdjc4kgipb" path="res://Gry/tabl/arrow.png" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://cf7pdjc4kgipb" path="res://Textures/arrow.png" id="2_0xm2m"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7dm0k"]
 font_size = 64

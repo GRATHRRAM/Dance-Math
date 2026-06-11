@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ch3ui8yaxul7c"
-path="res://.godot/imported/time.png-b6950c1417905eaabeab5003e84eb284.ctex"
+uid="uid://cf7pdjc4kgipb"
+path="res://.godot/imported/arrow.png-598b90186a62e5cc0acbe9b431d3a4c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Gry/tabl/time.png"
-dest_files=["res://.godot/imported/time.png-b6950c1417905eaabeab5003e84eb284.ctex"]
+source_file="res://Textures/arrow.png"
+dest_files=["res://.godot/imported/arrow.png-598b90186a62e5cc0acbe9b431d3a4c0.ctex"]
 
 [params]
 

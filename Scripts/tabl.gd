@@ -9,9 +9,9 @@ var Time2 = 5
 
 var HalfScreen = 0
 
-var CorrectScene : PackedScene = load("res://Gry/tabl/Correct.tscn")
-var WrongScene : PackedScene = load("res://Gry/tabl/Wrong.tscn")
-var TimeScene: PackedScene = load("res://Gry/tabl/time.tscn")
+var CorrectScene : PackedScene = load("res://Scenes/Correct.tscn")
+var WrongScene : PackedScene = load("res://Scenes/Wrong.tscn")
+var TimeScene: PackedScene = load("res://Scenes/time.tscn")
 
 func MakeTask(Player : int) -> void:
 	if Player == 1:
