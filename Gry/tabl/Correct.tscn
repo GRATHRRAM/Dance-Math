@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://1n4q7o5fuu6e"]
+
+[ext_resource type="Script" uid="uid://d0tk8mj011aaa" path="res://Gry/tabl/Particle.gd" id="1_wgv8c"]
+[ext_resource type="Texture2D" uid="uid://c0yw8jynkg7vl" path="res://Gry/tabl/GreenMark.png" id="2_0akm4"]
+
+[node name="Correct" type="Node2D" unique_id=251868832]
+script = ExtResource("1_wgv8c")
+
+[node name="GreenMark" type="Sprite2D" parent="." unique_id=2134998584]
+texture = ExtResource("2_0akm4")

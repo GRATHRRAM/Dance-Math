@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dop41np6fbhrm"]
+
+[ext_resource type="Script" uid="uid://d0tk8mj011aaa" path="res://Gry/tabl/Particle.gd" id="1_oap8j"]
+[ext_resource type="Texture2D" uid="uid://ch3ui8yaxul7c" path="res://Gry/tabl/time.png" id="2_cgtlp"]
+
+[node name="Time" type="Node2D" unique_id=1392009059]
+script = ExtResource("1_oap8j")
+
+[node name="Time" type="Sprite2D" parent="." unique_id=1316994161]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_cgtlp")
