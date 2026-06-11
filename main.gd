@@ -1,9 +1,5 @@
 extends Node2D
 
-
-func _ready() -> void:
-	$Gui/tabl.grab_focus()
-
 func _process(delta: float) -> void:
 	if Input.is_action_pressed("Right1"):
 		$Gui/Lewa.rotation_degrees = 0

@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://dbxxa46vdp4c8" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://cf7pdjc4kgipb" path="res://Textures/arrow.png" id="2_0xm2m"]
-[ext_resource type="Theme" uid="uid://c7ykq0km8js1r" path="res://new_theme.tres" id="3_1bvp3"]
-[ext_resource type="FontFile" uid="uid://dm1ryf5s0jnc5" path="res://Fonts/KOMIKAX_.ttf" id="3_7mycd"]
+[ext_resource type="Theme" uid="uid://c7ykq0km8js1r" path="res://Style/Theme.tres" id="3_1bvp3"]
+[ext_resource type="FontFile" uid="uid://6q4niuvl128" path="res://Fonts/Bangers-Regular_mod.otf" id="3_7mycd"]
 [ext_resource type="Texture2D" uid="uid://bcwynxxrddso7" path="res://Textures/background2.png" id="4_1bvp3"]
-[ext_resource type="LabelSettings" uid="uid://dtqw1yxil72s0" path="res://labl.tres" id="4_lquwl"]
+[ext_resource type="LabelSettings" uid="uid://dtqw1yxil72s0" path="res://Style/labl.tres" id="4_lquwl"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7dm0k"]
 font = ExtResource("3_7mycd")
@@ -25,8 +25,9 @@ theme = ExtResource("3_1bvp3")
 
 [node name="Label" type="Label" parent="Gui" unique_id=324356513]
 layout_mode = 0
+offset_top = 32.0
 offset_right = 1280.0
-offset_bottom = 178.0
+offset_bottom = 210.0
 text = "Dance Math"
 label_settings = SubResource("LabelSettings_7dm0k")
 horizontal_alignment = 1
@@ -51,19 +52,21 @@ texture = ExtResource("2_0xm2m")
 
 [node name="Label2" type="Label" parent="Gui" unique_id=1563914356]
 layout_mode = 0
-offset_top = 512.0
-offset_right = 200.0
-offset_bottom = 680.0
-text = "Stań żeby sprawdzić lewą Mate"
+offset_top = 488.0
+offset_right = 245.0
+offset_bottom = 656.0
+text = "Stań żeby sprawdzić
+lewą Mate"
 label_settings = ExtResource("4_lquwl")
 
 [node name="Label3" type="Label" parent="Gui" unique_id=1033973500]
 layout_mode = 0
-offset_left = 1024.0
-offset_top = 512.0
-offset_right = 1276.0
-offset_bottom = 680.0
-text = "Stań żeby sprawdzić prawą Mate"
+offset_left = 1032.0
+offset_top = 488.0
+offset_right = 1284.0
+offset_bottom = 656.0
+text = "Stań żeby sprawdzić
+prawą Mate"
 label_settings = ExtResource("4_lquwl")
 
 [node name="NumRrange" type="HSlider" parent="Gui" unique_id=2044760022]

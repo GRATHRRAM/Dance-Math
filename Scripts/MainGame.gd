@@ -15,6 +15,8 @@ enum Mode {
 	SQUAREROOT
 }
 
+var game_started = true
+
 var max_gen_number = Global	.max_gen_num
 
 var reset_time = Global.reset_time
@@ -58,7 +60,7 @@ func _process(delta: float) -> void:
 	if check_buttons():
 		handle_reset()
 
-	if is_game_over():
+	if is_game_over() or game_started:
 		return
 
 	handle_inputs()
@@ -161,7 +163,7 @@ func answer(player: int, choice: int) -> void:
 		points[player] += 1
 		spawn_particle("Correct", random_player_x(player))
 	else:
-		points[player] -= 1
+		if points[player] > -5: points[player] -= 1
 		spawn_particle("Wrong", random_player_x(player))
 
 	update_points(player)
@@ -201,7 +203,7 @@ func update_timers(delta: float) -> void:
 		times[player] -= delta
 
 		if times[player] < 0:
-			points[player] -= 1
+			if points[player] > -5: points[player] -= 1
 
 			update_points(player)
 			make_task(player)
@@ -226,24 +228,31 @@ func update_points(player: int) -> void:
 
 func check_winner() -> void:
 	if points[0] > 10:
-		players[0].get_node("Win").visible = true
+		$Gui/Player1.visible = false
+		$Gui/Win1.visible = true
 
 	if points[1] > 10:
-		players[1].get_node("Win").visible = true
+		$Gui/Player2.visible = false
+		$Gui/Win2.visible = true
 
 
 func is_game_over() -> bool:
 	return \
-		players[0].get_node("Win").visible or \
-		players[1].get_node("Win").visible
+		$Gui/Win1.visible or \
+		$Gui/Win2.visible
 
 
 func handle_reset() -> void:
+	game_started = false
+	
 	points[0] = 0
 	points[1] = 0
 
-	players[0].get_node("Win").visible = false
-	players[1].get_node("Win").visible = false
+	$Gui/StartInfo.visible = false
+	$Gui/Player1.visible = true
+	$Gui/Win1.visible = false
+	$Gui/Player2.visible = true
+	$Gui/Win2.visible = false
 
 	update_points(0)
 	update_points(1)

@@ -1,0 +1,24 @@
+[gd_resource type="Theme" format=3 uid="uid://c7ykq0km8js1r"]
+
+[ext_resource type="FontFile" uid="uid://bqs7cxa4wkm26" path="res://Fonts/Bangers-Regular.ttf" id="1_lpl83"]
+[ext_resource type="StyleBox" uid="uid://u3np28rbwrkb" path="res://Style/new_style_box_flat.tres" id="2_1o7y1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_amlv4"]
+bg_color = Color(0.18359044, 0.18359047, 0.18359032, 1)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+corner_detail = 11
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lpl83"]
+bg_color = Color(0, 0, 0, 1)
+
+[resource]
+Button/constants/align_to_largest_stylebox = 1
+Button/constants/outline_size = 20
+Button/font_sizes/font_size = 32
+Button/fonts/font = ExtResource("1_lpl83")
+Button/styles/hover = ExtResource("2_1o7y1")
+Button/styles/normal = SubResource("StyleBoxFlat_amlv4")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_lpl83")
