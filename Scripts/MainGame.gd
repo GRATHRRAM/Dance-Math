@@ -36,7 +36,7 @@ var TimeScene: PackedScene = preload("res://Scenes/time.tscn")
 # Two Buttons At the Same time
 var t1 := -1.0
 var t2 := -1.0
-var window := 0.1
+var window := 1
 
 
 func _ready() -> void:
@@ -132,7 +132,7 @@ func generate_task(mode : Mode) -> Dictionary:
 func make_task(player: int) -> void:
 	times[player] = reset_time
 
-	var task = generate_task(Mode.ADDITION)
+	var task = generate_task(Mode.MULTIPLICATION)
 
 	solutions[player] = task.solution
 
